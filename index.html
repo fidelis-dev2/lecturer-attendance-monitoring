@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lecturer Attendance Presentation System</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <section id="authScreen" class="auth-wrap">
+    <div class="auth-card">
+      <div class="auth-brand">
+        <h1>Lecturer Attendance Presentation System</h1>
+        <p>
+          A complete front-end simulation of the expected system interface for presentations, proposals, and product demonstrations.
+          This package is static and intentionally built with pure HTML, CSS, JavaScript, and JSON.
+        </p>
+        <ul class="auth-points">
+          <li>Professional login screen</li>
+          <li>Modern dashboard with sidebar navigation</li>
+          <li>Lecturer, room, timetable, attendance, reports, alerts, and settings pages</li>
+          <li>Presentation-ready view of AI camera, biometric, RFID, Email, and SMS workflow</li>
+        </ul>
+      </div>
+      <div class="auth-form">
+        <h2>System Login</h2>
+        <p>Demo login for presentation only.</p>
+        <div class="field">
+          <label class="label">Email or Username</label>
+          <input class="input" value="admin@cohema.co.tz">
+        </div>
+        <div class="field">
+          <label class="label">Password</label>
+          <input class="input" type="password" value="12345678">
+        </div>
+        <button id="demoLoginBtn" class="btn btn-primary btn-block">Login to Dashboard</button>
+        <div class="note">This is a front-end simulation only. No real authentication is performed.</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="appScreen" class="app hidden">
+    <aside class="sidebar">
+      <div class="brand">
+        <h2 id="appName">Lecturer Teaching Attendance Monitoring System</h2>
+        <p id="companyName">Cohema Company Limited</p>
+      </div>
+
+      <div class="user-card">
+        <div class="name" id="userName">System Administrator</div>
+        <div class="role" id="userRole">Admin</div>
+      </div>
+
+      <div class="menu">
+        <button class="menu-btn active" data-page="dashboard">Dashboard</button>
+        <button class="menu-btn" data-page="lecturers">Lecturers</button>
+        <button class="menu-btn" data-page="rooms">Lecture Rooms</button>
+        <button class="menu-btn" data-page="timetable">Timetable</button>
+        <button class="menu-btn" data-page="attendance">Attendance Monitor</button>
+        <button class="menu-btn" data-page="reports">Reports</button>
+        <button class="menu-btn" data-page="alerts">Alerts & Notifications</button>
+        <button class="menu-btn" data-page="settings">Settings</button>
+        <button id="logoutBtn" class="menu-btn">Logout</button>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div id="content"></div>
+    </main>
+  </section>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

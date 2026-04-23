@@ -1,0 +1,191 @@
+{
+  "appName": "Lecturer Teaching Attendance Monitoring System",
+  "company": "Cohema Company Limited",
+  "user": {
+    "name": "System Administrator",
+    "role": "Admin",
+    "email": "admin@cohema.co.tz"
+  },
+  "stats": [
+    {
+      "label": "Today's Lectures",
+      "value": 24
+    },
+    {
+      "label": "Lecturers Present",
+      "value": 17
+    },
+    {
+      "label": "Late Lecturers",
+      "value": 3
+    },
+    {
+      "label": "Rooms Active",
+      "value": 12
+    }
+  ],
+  "lecturers": [
+    {
+      "id": "L001",
+      "name": "Dr. John Mwakyusa",
+      "dept": "ICT",
+      "phone": "0712000001",
+      "status": "Active"
+    },
+    {
+      "id": "L002",
+      "name": "Ms. Neema Joseph",
+      "dept": "Engineering",
+      "phone": "0712000002",
+      "status": "Active"
+    },
+    {
+      "id": "L003",
+      "name": "Dr. Grace Mushi",
+      "dept": "Business",
+      "phone": "0712000003",
+      "status": "Active"
+    },
+    {
+      "id": "L004",
+      "name": "Mr. Peter Lucas",
+      "dept": "ICT",
+      "phone": "0712000004",
+      "status": "Active"
+    }
+  ],
+  "rooms": [
+    {
+      "code": "LR-01",
+      "building": "Block A",
+      "aiCamera": "Online",
+      "biometric": "Online",
+      "rfid": "Online"
+    },
+    {
+      "code": "LR-02",
+      "building": "Block A",
+      "aiCamera": "Online",
+      "biometric": "Offline",
+      "rfid": "Online"
+    },
+    {
+      "code": "LAB-01",
+      "building": "ICT Lab",
+      "aiCamera": "Online",
+      "biometric": "Online",
+      "rfid": "Online"
+    },
+    {
+      "code": "HALL-01",
+      "building": "Main Hall",
+      "aiCamera": "Online",
+      "biometric": "Online",
+      "rfid": "Online"
+    }
+  ],
+  "timetable": [
+    {
+      "course": "Database Systems",
+      "lecturer": "Dr. John Mwakyusa",
+      "room": "LR-01",
+      "day": "Monday",
+      "time": "08:00 - 10:00"
+    },
+    {
+      "course": "Computer Networks",
+      "lecturer": "Ms. Neema Joseph",
+      "room": "LAB-01",
+      "day": "Monday",
+      "time": "09:00 - 11:00"
+    },
+    {
+      "course": "Software Engineering",
+      "lecturer": "Mr. Peter Lucas",
+      "room": "LR-02",
+      "day": "Monday",
+      "time": "10:00 - 12:00"
+    },
+    {
+      "course": "Artificial Intelligence",
+      "lecturer": "Dr. Grace Mushi",
+      "room": "HALL-01",
+      "day": "Monday",
+      "time": "11:00 - 13:00"
+    }
+  ],
+  "attendance": [
+    {
+      "lecturer": "Dr. John Mwakyusa",
+      "room": "LR-01",
+      "checkIn": "07:54",
+      "checkOut": "09:58",
+      "duration": "2h 04m",
+      "status": "Present"
+    },
+    {
+      "lecturer": "Ms. Neema Joseph",
+      "room": "LAB-01",
+      "checkIn": "09:13",
+      "checkOut": "-",
+      "duration": "1h 12m",
+      "status": "Late"
+    },
+    {
+      "lecturer": "Mr. Peter Lucas",
+      "room": "LR-02",
+      "checkIn": "-",
+      "checkOut": "-",
+      "duration": "0m",
+      "status": "Absent"
+    },
+    {
+      "lecturer": "Dr. Grace Mushi",
+      "room": "HALL-01",
+      "checkIn": "10:58",
+      "checkOut": "-",
+      "duration": "1h 01m",
+      "status": "Present"
+    }
+  ],
+  "alerts": [
+    {
+      "time": "07:00",
+      "type": "Reminder",
+      "message": "Email & SMS reminder sent to Dr. John Mwakyusa for 08:00 lecture."
+    },
+    {
+      "time": "08:15",
+      "type": "Late",
+      "message": "Ms. Neema Joseph arrived late for LAB-01 session."
+    },
+    {
+      "time": "10:20",
+      "type": "Absence",
+      "message": "Mr. Peter Lucas not detected in LR-02 after session start."
+    },
+    {
+      "time": "11:00",
+      "type": "Device",
+      "message": "Biometric device in LR-02 reported offline status."
+    }
+  ],
+  "reports": [
+    {
+      "name": "Daily Attendance Summary",
+      "desc": "Shows lecturer attendance status for the current day."
+    },
+    {
+      "name": "Late Arrival Report",
+      "desc": "Lists lecturers who arrived after scheduled time."
+    },
+    {
+      "name": "Time Spent Analysis",
+      "desc": "Measures actual lecture room duration against timetable."
+    },
+    {
+      "name": "Room Device Status Report",
+      "desc": "Shows AI camera, biometric, and RFID status by room."
+    }
+  ]
+}
